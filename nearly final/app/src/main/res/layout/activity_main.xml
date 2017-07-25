@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dimka.weather.Main">
+
+
+    <TextView
+        android:id="@+id/citytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saratov,RU"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="2dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <TextView
+        android:id="@+id/thtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="13"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/citytxt"
+        app:layout_constraintHorizontal_bias="0.508" />
+
+    <ImageButton
+        android:id="@+id/btnset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <ImageView
+        android:id="@+id/thumbnailIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thtxt"
+        app:srcCompat="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/cloudtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:text="description"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnailIcon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/humidtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:text="huididty"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cloudtxt" />
+
+    <TextView
+        android:id="@+id/presstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:text="pressure"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidtxt" />
+
+    <TextView
+        android:id="@+id/windtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="wind"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/presstxt"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/srtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="sunrise"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/windtxt"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/sstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sunset"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/srtxt" />
+
+    <TextView
+        android:id="@+id/uptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last updated"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="23dp"
+        app:layout_constraintTop_toBottomOf="@+id/sstxt"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/gpsbtn"
+        android:layout_width="51dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="GPS"
+        app:layout_constraintTop_toBottomOf="@+id/btnset"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+</android.support.constraint.ConstraintLayout>
